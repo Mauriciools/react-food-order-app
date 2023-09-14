@@ -1,0 +1,10 @@
+.header-img {
+    height: 27rem;
+    z-index: 1;
+}
+
+.header-img img {
+    width: 110%;
+    height: 100%;
+    transform: rotateZ(-2deg) translateY(-3rem) translateX(-1rem);
+}

@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: rgba(97, 57, 57, 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Cabin', sans-serif;
+    z-index: 2;
+}
+
+.header h1 {
+    margin-left: 5rem;
+}
+
+.header button {
+    margin-right: 5rem;
+    height: 3rem;
+    font-weight: bold;
+    padding: 0 1rem;
+}
