@@ -1,0 +1,22 @@
+.meals-description {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    width: 90%;
+    max-width: 45rem;
+    margin: auto;
+    margin-top: -12.5rem;
+    padding: 1rem;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+    background-color: rgb(177, 171, 192);
+}
+
+.meals-description h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.meals-description p {
+    font-size: 1.1rem;
+}

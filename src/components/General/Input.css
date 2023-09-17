@@ -1,0 +1,17 @@
+.input-form {
+    display: flex;
+    align-items: center;
+    font-family: 'Cabin', sans-serif;
+}
+
+.input-form label {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.input-form input {
+    font: inherit;
+    width: 3rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
