@@ -1,0 +1,50 @@
+.cart-item {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #865023;
+    padding: 0 0 1rem;
+}
+
+.cart-item-info {
+    display: flex;
+    gap: 3rem;
+}
+
+.cart-item-price {
+    color: #914c15;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cart-item-amount {
+    font-weight: bold;
+    border: 2px solid #7c7c7c;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    padding: 0.2rem 0.5rem;
+    margin-top: -0.5rem;
+}
+
+.cart-item-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.2rem 0 0;
+    padding: 0;
+}
+
+.cart-item-buttons button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    height: 35px;
+    width: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(156, 35, 35);;
+}
+
+.cart-item-buttons button:hover, .cart-item-buttons button:active {
+    background-color: rgb(121, 30, 30);
+}
