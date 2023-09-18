@@ -13,7 +13,7 @@
 
 .header-button:hover, .header-button:active {
     background-color: rgb(58, 27, 27);
-} 
+}
 
 .header-button-icon {
     width: 1rem;
@@ -21,7 +21,7 @@
     margin-right: 1rem;
 }
 
-.header-button-price {
+.header-button-amount {
     background-color: rgb(151, 95, 62);
     padding: 0.25rem 0.75rem;
     border-radius: 10px;
@@ -29,6 +29,32 @@
     margin-left: 1rem;
 }
 
-.header-button:hover .header-button-price, .header-button:active .header-button-price {
+.header-button:hover .header-button-amount, .header-button:active .header-button-amount {
     background-color: rgb(128, 76, 47);
+}
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

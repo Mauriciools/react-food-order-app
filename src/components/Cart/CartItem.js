@@ -13,8 +13,8 @@ function CartItem(props) {
                 </div>
             </div>
             <div className="cart-item-buttons">
-                <button>-</button>
-                <button>+</button>
+                <button onClick={props.onRemoveItemAmount}>-</button>
+                <button onClick={props.onAddItemAmount}>+</button>
             </div>
         </li>
     );
