@@ -11,6 +11,25 @@
     padding: 0;
 }
 
+.meals-loading {
+    text-align: center;
+}
+
+.meals-loading p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.meals-error {
+    text-align: center;
+}
+
+.meals-error p {
+    font-size: 20px;
+    font-style: italic;
+    color: red;
+}
+
 @keyframes meals-appear {
     from {
         opacity: 0;
