@@ -1,6 +1,7 @@
 # Food Order App
 
 This project was a technical challenge from a React course I am taking.
+
 The idea behind it is to simulate a food order app, where the user could select a desired meal and its amount. Based on the meal information, the food was added to a cart for placing an order in the future. You can also remove the meal from the card as well. Here, I practiced my knowledge about React components, useState, useEffect, useRef, useContext, useReducer, React props, CSS styling, and more! I hope you enjoy :)
 
 ## Available Scripts
