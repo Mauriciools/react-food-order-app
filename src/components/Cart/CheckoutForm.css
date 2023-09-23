@@ -1,0 +1,54 @@
+.form {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkout-form-control {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.checkout-form-control h2 {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.checkout-form-actions {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;    
+}
+
+.checkout-form-actions button {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #000000;
+}
+
+.checkout-form-actions .checkout-confirm-button {
+    color: white;
+    background-color: rgb(156, 35, 35);
+}
+
+.checkout-form-actions .checkout-cancel-button {
+    color: black;
+    background-color: white;
+}
+
+.checkout-form-actions .checkout-confirm-button:hover, .checkout-form-actions .checkout-confirm-button:active {
+    background-color: rgb(121, 30, 30);
+}
+
+.checkout-form-actions .checkout-cancel-button:hover, .checkout-form-actions .checkout-cancel-button:active {
+    color: white;
+    background-color: #919191;
+}

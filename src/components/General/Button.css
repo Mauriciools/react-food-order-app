@@ -1,4 +1,4 @@
-.button {
+.meal-item-button {
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     font-size: 16px;
@@ -11,6 +11,6 @@
     background-color: rgb(156, 35, 35);
 }
 
-.button:hover, .button:active {
+.meal-item-button:hover, .button:active {
     background-color: rgb(121, 30, 30);
 }

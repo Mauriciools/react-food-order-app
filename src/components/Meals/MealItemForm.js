@@ -21,14 +21,14 @@ function MealItemForm(props) {
 
     return (
         <form onSubmit={submitHandler}>
-            <Input label="Amount" ref={inputRef} input={{
+            <Input label="Amount" ref={inputRef} className="input-form" input={{
                 id: 'amout_' + props.id,
                 type: 'number',
                 min: '1',
                 step: '1',
                 defaultValue: '1'
             }} />
-            <Button type="submit">+ Add</Button>
+            <Button className="meal-item-button" type="submit">+ Add</Button>
             {!isAmountValid && <p>The amount selected is not valid!</p>}
         </form>
     );
