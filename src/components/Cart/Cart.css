@@ -2,6 +2,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    max-height: 15rem;
     overflow: auto;
 }
 
@@ -32,4 +33,24 @@
     padding: 0.5rem 1.5rem;
     border-radius: 14px;
     border: 1px solid #000000;
+}
+
+.submitted {
+    text-align: center;
+}
+
+.close-button {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 14px;
+    border: 1px solid #000000;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    text-align: center;
 }

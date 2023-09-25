@@ -29,7 +29,7 @@
 .cart-item-buttons {
     display: flex;
     gap: 0.5rem;
-    margin: 1.2rem 0 0;
+    margin: 1.2rem 1rem 0;
     padding: 0;
 }
 

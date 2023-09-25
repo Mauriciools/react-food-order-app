@@ -54,7 +54,12 @@ function CheckoutForm(props) {
         if (!formIsValid)
             return;
 
-
+        props.onConfirm({
+            name: enteredName,
+            address: enteredAddress,
+            postalCode: enteredPCode,
+            city: enteredCity
+        });
 
         resetName();
         resetAddress();
