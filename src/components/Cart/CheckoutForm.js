@@ -117,7 +117,7 @@ function CheckoutForm(props) {
             </div>
             <div className="checkout-form-actions">
                 <Button className="close-button" type="button" onClick={props.onCancel}>Cancel</Button>
-                <Button className="confirm-button" type="submit" disabled={!formIsValid}>Confirm</Button>
+                <button className="confirm-button" type="submit" disabled={!formIsValid}>Confirm</button>
             </div>
         </form>
     );

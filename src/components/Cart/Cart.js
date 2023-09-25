@@ -7,14 +7,17 @@ import CheckoutForm from "./CheckoutForm";
 import CartItem from "./CartItem";
 import "./Cart.css";
 
-const initialSubmitState = { isSubmitting: false, didSubmit: false };
+const initialSubmitState = { isSubmitting: false, didSubmit: false, error: null };
 const submitReducer = (state, action) => {
     if (action.type === "SUBMITTING") {
-        return { isSubmitting: true, didSubmit: false };
+        return { isSubmitting: true, didSubmit: false, error: null };
     };
     if (action.type === "SUBMITTED") {
-        return { isSubmitting: false, didSubmit: true };
+        return { isSubmitting: false, didSubmit: true, error: null };
     };
+    if (action.type === "ERROR") {
+        return { isSubmitting: false, didSubmit: false, error: action.error };
+    }
 
     return initialSubmitState;
 };
@@ -60,7 +63,7 @@ function Cart(props) {
             cartCtx.clearCart();
         }
         catch (error) {
-            console.log(error.message);
+            dispatchSubmit({ type: "ERROR", error: error.message });
         }
     };
 
@@ -95,10 +98,15 @@ function Cart(props) {
         <p>The order has been successfully submitted! I hope you enjoy your meal :)</p>
         <Button className="close-button" onClick={props.onHideCart}>Close</Button>
     </div>;
+    const submitError = <div className="submitted-error">
+        <p>{submitState.error}.</p>
+        <Button className="close-button" onClick={props.onHideCart}>Close</Button>
+    </div>;
 
     return (
         <Modal onHideCart={props.onHideCart}>
-            {!submitState.isSubmitting && !submitState.didSubmit && normalCart}
+            {!submitState.isSubmitting && !submitState.didSubmit && !submitState.error && normalCart}
+            {!submitState.isSubmitting && !submitState.didSubmit && submitState.error && submitError}
             {submitState.isSubmitting && !submitState.didSubmit && submitting}
             {!submitState.isSubmitting && submitState.didSubmit && submitted}
         </Modal>
