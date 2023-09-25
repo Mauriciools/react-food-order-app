@@ -36,3 +36,18 @@
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
 }
+
+.checkout-form input:focus {
+    outline: none;
+    border-color: #ff8800;
+    background-color: #fff3e6;
+}
+
+.invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.invalid label {
+    color: #b40e0e;
+}

@@ -6,7 +6,11 @@ const Input = React.forwardRef((props, ref) => {
     return (
         <div className={props.className}>
             <label htmlFor={props.input.id}>{props.label}</label>
-            <input ref={ref} {...props.input}></input>
+            <input ref={ref} {...props.input}
+                onChange={props.onChange}
+                onBlur={props.onBlur}
+                value={props.value}
+            ></input>
         </div>
     );
 });

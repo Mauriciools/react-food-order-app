@@ -17,6 +17,17 @@
     margin: 1rem 0;
 }
 
+.checkout-form-control p {
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+.checkout-form-control .invalid p {
+    color: red;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
 .checkout-form-actions {
     font-family: 'Cabin', sans-serif;
     display: flex;
@@ -34,21 +45,6 @@
     border: 1px solid #000000;
 }
 
-.checkout-form-actions .checkout-confirm-button {
-    color: white;
-    background-color: rgb(156, 35, 35);
-}
-
-.checkout-form-actions .checkout-cancel-button {
-    color: black;
-    background-color: white;
-}
-
-.checkout-form-actions .checkout-confirm-button:hover, .checkout-form-actions .checkout-confirm-button:active {
-    background-color: rgb(121, 30, 30);
-}
-
-.checkout-form-actions .checkout-cancel-button:hover, .checkout-form-actions .checkout-cancel-button:active {
-    color: white;
-    background-color: #919191;
+.error-text {
+    color: #b40e0e;
 }

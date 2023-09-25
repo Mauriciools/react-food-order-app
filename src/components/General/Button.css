@@ -14,3 +14,29 @@
 .meal-item-button:hover, .button:active {
     background-color: rgb(121, 30, 30);
 }
+
+.confirm-button {
+    color: white;
+    background-color: rgb(156, 35, 35);
+}
+
+.close-button {
+    color: black;
+    background-color: white;
+}
+
+.confirm-button:hover, .confirm-button:active {
+    background-color: rgb(121, 30, 30);
+}
+
+.close-button:hover, .close-button:active {
+    color: white;
+    background-color: #919191;
+}
+
+.confirm-button:disabled, .confirm-button:disabled:hover, .confirm-button:disabled:active {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #292929;
+    cursor: not-allowed;
+}

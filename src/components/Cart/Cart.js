@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 
 import CartContext from "../../store/cart-context";
+import Button from "../General/Button";
 import Modal from "../General/Modal";
 import CheckoutForm from "./CheckoutForm";
 import CartItem from "./CartItem";
@@ -24,8 +25,8 @@ function Cart(props) {
     };
 
     let content = <div className="cart-buttons">
-        <button className="close-button" onClick={props.onHideCart}>Close</button>
-        {cartCtx.items.length > 0 && <button className="order-button" onClick={orderHandler}>Order</button>}
+        <Button className="close-button" onClick={props.onHideCart}>Close</Button>
+        {cartCtx.items.length > 0 && <Button className="confirm-button" onClick={orderHandler}>Order</Button>}
     </div>;
 
     if (isCheckout)
